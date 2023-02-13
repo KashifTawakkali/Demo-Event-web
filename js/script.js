@@ -19,15 +19,6 @@ window.onscroll = () =>{
   themeToggler.classList.remove('active');
 }
 
-document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn =>{
-  
-  btn.onclick = () =>{
-    let color = btn.style.background;
-    document.querySelector(':root').style.setProperty('--main-color', color);
-  }
-
-});
-
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
   grabCursor: true,
